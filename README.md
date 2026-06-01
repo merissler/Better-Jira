@@ -1,3 +1,5 @@
+[Installation instructions](#installation)
+
 # Better Jira
 
 <img src="icon.svg" width="150">
@@ -17,3 +19,13 @@
 ![image](https://github.com/user-attachments/assets/1b2d3c60-7fab-4bd0-8f9b-4fe93722fbbb)
 
 ![image](https://github.com/user-attachments/assets/4436276d-6dca-45cc-af8b-5ea2dbd4f2e8)
+
+# Installation
+
+1. [Download](https://github.com/merissler/Better-Jira/releases/latest/download/Better-Jira.crx)
+2. Developer mode
+3. Drag n' drop
+
+![image](https://github.com/user-attachments/assets/c62af817-0ae5-4b18-b767-e189ede4a08e)
+
+![image](https://github.com/user-attachments/assets/4afd6824-cca7-4e85-b9e2-f4841904a8f7)
