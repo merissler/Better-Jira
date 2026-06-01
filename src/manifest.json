@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Better Jira",
+    "description": "Colorizes tickets and deletes AI useless stuff",
+    "version": "2.0",
+    "icons": {
+        "32": "icon.png",
+        "64": "icon.png",
+        "128": "icon.png"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "better-jira@merissler.github.io",
+            "strict_min_version": "109.0"
+        }
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "color-changer.js",
+                "ai-deleter.js"
+            ],
+            "matches": [
+                "https://goodstech.atlassian.net/*"
+            ]
+        }
+    ]
+}

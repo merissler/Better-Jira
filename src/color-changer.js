@@ -63,7 +63,28 @@ function GetTicketTextElements() {
 }
 
 function GetTicketNumber(ticketElement) {
-    return ticketElement.href.match(/\d{4,}/)
+    var href = ticketElement.href;
+    var currentNumber = "";
+    var bestNumber = 0;
+
+    for (let i = 0; i < href.length; i++) {
+        var ch = href[i];
+
+        if (ch >= "0" && ch <= "9") {
+            currentNumber += ch;
+        }
+        else {
+            if (currentNumber.length >= 4) {
+                bestNumber = Number(currentNumber);
+            }
+
+            currentNumber = "";
+        }
+    }
+    if (currentNumber.length >= 4) {
+        bestNumber = Number(currentNumber);
+    }
+    return bestNumber;
 }
 
 function HsvToHex(h, s, v) {
