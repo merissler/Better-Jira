@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Better Jira",
-  "description": "Adds colors to tickets and deletes the AI acronym underlines",
+  "description": "Colorizes tickets and deletes AI useless stuff",
   "version": "2.0",
   "icons": {
     "1028": "icon.png"
