@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Better Jira",
+  "description": "Adds colors to tickets and deletes the AI acronym underlines",
+  "version": "2.0",
+  "icons": {
+    "1028": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "color-changer.js",
+		"ai-deleter.js"
+      ],
+      "matches": [
+        "https://goodstech.atlassian.net/*"
+      ]
+    }
+  ]
+}
