@@ -7,6 +7,8 @@
 
 # Screenshots
 
+<img src="https://github.com/user-attachments/assets/6c62b591-967c-40c8-abbd-b57e27c4931d" />
+
 <div>
   <img src="https://github.com/user-attachments/assets/14b05ef4-356d-4040-aa27-485612ef8052">
   <img src="https://github.com/user-attachments/assets/c15bd61b-1170-4593-9e88-86afa100fb94">
