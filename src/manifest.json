@@ -3,10 +3,16 @@
     "name": "Better Jira",
     "description": "Colorizes tickets and deletes AI useless stuff",
     "version": "2.0",
+    "permissions": [
+        "storage",
+		"activeTab"
+    ],
     "icons": {
         "32": "icon.png",
         "64": "icon.png",
-        "128": "icon.png"
+        "128": "icon.png",
+        "256": "icon.png",
+        "512": "icon.png"
     },
     "browser_specific_settings": {
         "gecko": {
@@ -17,12 +23,21 @@
     "content_scripts": [
         {
             "js": [
-                "color-changer.js",
-                "ai-deleter.js"
+                "better-jira.js"
             ],
             "matches": [
-                "https://goodstech.atlassian.net/*"
+                "https://*.atlassian.net/*"
             ]
         }
-    ]
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "32": "icon.png",
+            "64": "icon.png",
+            "128": "icon.png",
+            "256": "icon.png",
+            "512": "icon.png"
+        }
+    }
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Better Jira</title>
+</head>
+<body>
+	<div class="scroll">
+		<div class="colorizer">
+			<label style="display: contents;">
+				<img src="colorized-dev-ticket.png">
+				<span class="toggle">
+					<input type="checkbox" id="toggle-colorizer">
+					<span class="toggle-text">enable colorizer</span>
+				</span>
+			</label>
+			<label class="toggle">
+				<input type="checkbox" id="toggle-skip-light-colors">
+				<span class="toggle-text">skip light colors</span>
+			</label>
+			<label class="toggle">
+				<input type="checkbox" id="toggle-skip-dark-colors">
+				<span class="toggle-text">skip dark colors</span>
+			</label>
+		</div>
+		
+		<label class="toggle">
+			<img src="recommended-definition.png">
+			<input type="checkbox" id="toggle-recommended-definitions">
+			<span class="toggle-text">hide recommended definitions</span>
+		</label>
+		
+		<label class="toggle">
+			<img src="define-popup.png">
+			<input type="checkbox" id="toggle-define-popup">
+			<span class="toggle-text">hide 'define' popup</span>
+		</label>
+		
+		<label class="toggle">
+			<img src="rovo-top.png">
+			<input type="checkbox" id="toggle-rovo-top">
+			<span class="toggle-text">hide rovo button (top)</span>
+		</label>
+		
+		<label class="toggle">
+			<img src="rovo-bottom.png">
+			<input type="checkbox" id="toggle-rovo-bottom">
+			<span class="toggle-text">hide rovo button (bottom)</span>
+		</label>
+		
+		<label class="toggle">
+			<img src="development-panel.png">
+			<input type="checkbox" id="toggle-development-panel">
+			<span class="toggle-text">hide 'development' panel</span>
+		</label>
+		
+		<label class="toggle">
+			<img src="recommended-apps.png">
+			<input type="checkbox" id="toggle-recommended-apps">
+			<span class="toggle-text">hide recommended apps</span>
+		</label>
+		
+		<label class="toggle">
+			<img src="attachments-agents-linked-items-and-tempo.png">
+			<input type="checkbox" id="toggle-css-rjtezs">
+			<span class="toggle-text">hide attachments, linked work items, tempo, and agents</span>
+		</label>
+	</div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
