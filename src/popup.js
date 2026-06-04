@@ -34,14 +34,24 @@ var checkboxSettings = [
         key: "hideRovoBottom",
         defaultValue: true
     },
-    {
-        id: "toggle-development-panel",
-        key: "hideDevelopmentPanel",
+	{
+        id: "toggle-comments-summary",
+        key: "hideCommentsSummary",
         defaultValue: true
     },
     {
         id: "toggle-recommended-apps",
         key: "hideRecommendedApps",
+        defaultValue: true
+    },
+    {
+        id: "toggle-development-panel",
+        key: "hideDevelopmentPanel",
+        defaultValue: true
+    },
+	{
+        id: "toggle-suggestions-panel",
+        key: "hideSuggestionsPanel",
         defaultValue: true
     },
     {

@@ -14,7 +14,9 @@ var defaultSettings = {
     hideRovoBottom: true,
     hideDevelopmentPanel: true,
     hideRecommendedApps: true,
-    hideCssRjtezs: true
+    hideCssRjtezs: true,
+	hideCommentsSummary: true,
+	hideSuggestionsPanel: true,
 };
 
 var currentSettings = defaultSettings;
@@ -49,7 +51,11 @@ var deleteClassRules = [
     {
         className: "css-rjtezs",
         settingKey: "hideCssRjtezs"
-    }
+    },
+	{
+		className: "css-1nnhl9x",
+		settingKey: "hideCommentsSummary",
+	}
 ];
 
 var deleteAttributeSelectorRules = [
@@ -68,7 +74,15 @@ var deleteAttributeSelectorRules = [
     {
         selector: '[data-testid="highlight-actions.ui.popup-target.popup-dialog.popup-wrapper.popup"]',
         settingKey: "hideDefinePopup"
-    }
+    },
+	{
+		selector: '[data-testid="servicedesk-ai-context-common.ui.ai-context-container.ai-container"]',
+		settingKey: "hideSuggestionsPanel"
+	},
+	{
+		selector: '[data-testid="servicedesk-smart-request-summary-trigger.ui.jira-smart-summary-standard-button"]',
+		settingKey: "hideCommentsSummary"
+	}
 ];
 
 startBetterJira();
@@ -230,10 +244,6 @@ function observeDomChanges() {
         });
     }
 }
-
-/* -------------------------------------------------------------------------- */
-/* Deleter                                                                     */
-/* -------------------------------------------------------------------------- */
 
 function getDeleteSelectorText() {
     var selectors = [];
@@ -424,10 +434,6 @@ function cleanBetterJiraNode(node) {
         }
     }
 }
-
-/* -------------------------------------------------------------------------- */
-/* Colorizer                                                                   */
-/* -------------------------------------------------------------------------- */
 
 function scheduleTicketColorRefresh() {
     if (colorizerRefreshScheduled === false) {
