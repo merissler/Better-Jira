@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Better Jira",
     "description": "Colorizes tickets and deletes AI useless stuff",
-    "version": "2.0",
+    "version": "2.2",
     "permissions": [
         "storage",
 		"activeTab"
